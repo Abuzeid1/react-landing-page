@@ -1,0 +1,12 @@
+.rowtext {
+  width: 269px;
+
+  text-align: left;
+}
+.rowtext-headline {
+  display: flex;
+}
+
+.rowtext .title {
+  max-width: 173px;
+}

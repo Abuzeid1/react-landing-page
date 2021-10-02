@@ -1,0 +1,20 @@
+.header-text {
+  padding: 50px 0;
+}
+.header-text .head-line {
+  max-width: 740px;
+}
+.header-text .sub-heading {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 17px;
+}
+@media (max-width: 756px) {
+  .header-text {
+    padding: 0;
+  }
+
+  .header-text .sub-heading {
+    max-width: 402px;
+  }
+}
