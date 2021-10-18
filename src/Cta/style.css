@@ -6,19 +6,18 @@
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
   border-radius: 33px;
   display: flex;
-  justify-content: center;
-  gap: 86px;
+  justify-content: space-between;
+  align-content: center;
   max-width: 1219px;
   margin: auto;
-  max-width: 90%;
+  width: 97%;
 }
 .cta .content .left-content {
-  max-width: 544px;
-  width: 45%;
-  min-width: 20%;
-  padding-left: 94px;
+  max-width: 600px;
+  width: 50%;
+
+  padding-left: 10%;
   text-align: left;
-  align-self: center;
   margin: 30px 0;
 }
 .cta .content .left-content button {
@@ -29,12 +28,15 @@
   margin-top: 37px;
 }
 
-.cta .content img {
+.cta .content .right-content {
+  background: url("./Line Chart.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 598px;
-  width: 45%;
-  min-width: 20%;
+  width: 50%;
   border-bottom-right-radius: 33px;
 }
+
 @media (max-width: 756px) {
   .cta {
     padding: 0;
@@ -42,21 +44,30 @@
   }
   .cta .content {
     flex-direction: column;
-    text-align: center;
     align-items: center;
     background: #1e1e1e;
-
+    display: block;
     width: 100%;
     border: none;
   }
-  .cta .content img {
+  .cta .content .right-content {
+    background: url("./Line\ Chart\ 1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 0;
+    max-width: 100%;
     width: 100%;
+    height: 500px;
   }
   .cta .content .left-content {
-    width: 65%;
+    width: 100%;
+    max-width: 365px;
     text-align: center;
-    padding: 104px 0;
-    align-items: center;
-    align-self: center;
+    padding: 0;
+    padding-top: 104px;
+    padding-bottom: 104px;
+    justify-content: center;
+    margin: auto;
   }
 }

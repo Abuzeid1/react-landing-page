@@ -9,5 +9,6 @@
 @media (max-width: 756px) {
   .features {
     gap: 27px;
+    padding: 0;
   }
 }

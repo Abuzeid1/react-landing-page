@@ -1,11 +1,14 @@
 .feature-heading .sub-heading {
   max-width: 602px;
-  width: 80%;
+  width: 100%;
   margin-top: 27px;
 }
-
+.feature-heading {
+  width: 100%;
+}
 @media (max-width: 756px) {
   .feature-heading .sub-heading {
-    width: 70%;
+    max-width: 402px;
+    width: 100%;
   }
 }

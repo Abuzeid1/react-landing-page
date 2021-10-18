@@ -40,6 +40,7 @@
   .feature-frame {
     flex-direction: column;
     max-width: 376px;
+    width: 83%;
   }
   .feature-img {
     margin-bottom: 13%;

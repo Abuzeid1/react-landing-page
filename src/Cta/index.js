@@ -11,7 +11,7 @@ function index() {
           </div>
           <button>Try For Free</button>
         </div>
-        <img src={image} alt="" />
+        <div className="right-content" />
       </div>
     </section>
   );
