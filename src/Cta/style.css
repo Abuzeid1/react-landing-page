@@ -52,7 +52,7 @@
   }
   .cta .content .right-content {
     background: url("./Line\ Chart\ 1.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 0;

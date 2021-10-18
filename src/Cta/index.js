@@ -1,5 +1,4 @@
 import "./style.css";
-import image from "./Line Chart.png";
 
 function index() {
   return (
