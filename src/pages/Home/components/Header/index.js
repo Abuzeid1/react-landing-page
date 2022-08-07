@@ -3,7 +3,7 @@ import images from "./images";
 
 function index() {
   return (
-    <section className={`${styles.header}`}>
+    <section className={`${styles.section}`}>
       <h1 className={`${styles.headLine} second-headline`}>
         Work at the speed of thought
       </h1>
@@ -21,11 +21,20 @@ function index() {
         </button>
       </div>
 
-      <picture className={`${styles.screen}`}>
-        <source media="(max-width:480px)" srcSet={images.screens._480} />
-        <source media="(max-width:1080px)" srcSet={images.screens._1080} />
-        <img className={styles.screenImg} src={images.screens._1920} alt="" />
-      </picture>
+      <figure className={`${styles.imagesGroup}`}>
+        <picture className={`${styles.image} ${styles.dashboard}`}>
+          <source media="(max-width:1080)" srcSet={images.dashboard._480} />
+          <img src={images.dashboard._1080} alt="dashboard" />
+        </picture>
+        <picture className={`${styles.image} ${styles.chatBot}`}>
+          <source media="(max-width:1080)" srcSet={images.chatBot._480} />
+          <img src={images.chatBot._1080} alt="chat bot" />
+        </picture>
+        <picture className={`${styles.image} ${styles.boards}`}>
+          <source media="(max-width:1080)" srcSet={images.boards._480} />
+          <img src={images.boards._1080} alt="boards" />
+        </picture>
+      </figure>
     </section>
   );
 }

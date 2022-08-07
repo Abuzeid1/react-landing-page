@@ -1,8 +1,8 @@
 const images = {
   chatBotImg: {
-    _480: require("./chatBot480.webp"),
-    _1080: require("./chatBot1080.webp"),
-    _1920: require("./chatBot1920.webp"),
+    _480: require("../../Header/images/chatBot480.webp"),
+    _1080: require("../../Header/images/chatBot1080.webp"),
+    _1920: require("../../Header/images/chatBot1920.webp"),
   },
   chartImg: {
     _480: require("./chart480.webp"),
