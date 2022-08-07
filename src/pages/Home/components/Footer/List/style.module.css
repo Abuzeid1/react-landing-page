@@ -1,0 +1,15 @@
+.list {
+  width: 7.6rem;
+  padding: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 1.25rem;
+}
+.list li {
+  padding: 0;
+  margin: 0;
+}
+
+.list .title {
+  margin-bottom: 1.25rem;
+}

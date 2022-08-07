@@ -1,0 +1,47 @@
+html {
+  /* width */
+  --w-mob-section: 74%;
+
+  /* typography */
+  --fz-headline: 5rem;
+  --fw-headline: 500;
+
+  --fz-sc-headline: 3.25rem;
+  --fw-sc-headline: 400;
+
+  --fz-sub-heading: 1.25rem;
+  --fw-sub-heading: 400;
+
+  --fz-title: 1.25rem;
+  --fw-title: 500;
+
+  --fz-sub-title: 1rem;
+  --fw-sub-title: 500;
+
+  --fz-btn: 1.25rem;
+  --fw-btn: 500;
+
+  --fz-p: 1rem;
+  --fw-p: 400;
+
+  --fz-link: 1rem;
+  --fw-link: 500;
+
+  --fz-m-menu: 1.875rem;
+  --fw-m-menu: 400;
+  /* line heights */
+  --lh-normal: 1.5rem;
+  /* colors */
+
+  --clr-tx-pr: rgb(255, 255, 255);
+  --clr-tx-sc: rgb(92, 92, 92);
+  --clr-tx-3: rgb(0, 0, 0);
+
+  /* --clr-tx-pr: black; */
+  --clr-bg-pr: rgb(24, 24, 24);
+  --clr-bg-sc: rgba(255, 255, 255, 1);
+  --clr-bg-3: rgba(52, 52, 52, 1);
+  --clr-btn-pr: rgb(68, 82, 254);
+  --clr-btn-sc: rgb(2, 228, 192);
+  --clr-border-sc: rgba(222, 222, 222, 1);
+}

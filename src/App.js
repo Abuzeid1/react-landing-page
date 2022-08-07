@@ -1,25 +1,19 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./Header";
-import Features from "./Features";
-import Contents from "./Contents";
-import Gallery from "./Gallery";
-import Partners from "./Partners";
-import Testimonials from "./Testimonials";
-import Cta from "./Cta";
-import Footer from "./Footer";
+import "./GlobalVariables.css";
+import "./global.css";
+import "./globalClasses.css";
+import Home from "./pages/Home";
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Features />
-      <Contents />
-      <Gallery />
-      <Partners />
-      <Testimonials />
-      <Cta />
-      <Footer />
-    </div>
+    <BrowserRouter className="App">
+      <main className="App">
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </main>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,21 @@
+.listItem {
+  text-align: left;
+  width: fit-content;
+}
+
+.title {
+  max-width: 19ch;
+  margin-left: 0;
+  margin-bottom: 1.25rem;
+
+  display: flex;
+  align-items: flex-start;
+}
+.image {
+  width: 2rem;
+  height: auto;
+  margin-right: 0.8rem;
+}
+.subTitle {
+  width: 27ch;
+}

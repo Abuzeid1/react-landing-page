@@ -1,7 +1,7 @@
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  color: #ffffff;
   font-family: sans-serif;
   font-weight: 500;
   letter-spacing: 0.2px;
@@ -12,61 +12,8 @@ section {
   padding: 50px 0;
 }
 .App {
-  background: #181818;
+  background: var(--clr-bg-pr);
   text-align: center;
 }
-
-.btn {
-  font-size: 17px;
-  line-height: 25px;
-  cursor: pointer;
-}
-
-.link {
-  font-size: 16px;
-  line-height: 24px;
-  cursor: pointer;
-  text-decoration: none;
-  padding: 10px;
-}
-.head-line {
-  font-size: 88px;
-  line-height: 88px;
-  padding: 10px;
-}
-.sub-heading {
-  font-size: 20px;
-  line-height: 30px;
-  padding: 10px;
-  margin: auto;
-}
-.second-headline {
-  font-size: 52px;
-  line-height: 62px;
-  letter-spacing: 0.2px;
-  padding: 10px;
-}
-.title {
-  font-size: 20px;
-  line-height: 30px;
-  letter-spacing: 0.1px;
-  padding: 10px;
-}
-
-.paragraph {
-  font-size: 17px;
-
-  letter-spacing: 0.2px;
-  padding: 10px;
-}
-.adress {
-  font-size: 16px;
-  padding: 10px;
-}
-
 @media (max-width: 756px) {
-  .content1:after {
-    content: "\a";
-    white-space: pre;
-  }
 }

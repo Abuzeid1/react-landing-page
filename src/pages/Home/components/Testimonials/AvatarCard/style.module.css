@@ -1,0 +1,32 @@
+.card {
+  padding: 2.5rem;
+  text-align: left;
+  max-width: 100%;
+  width: min-content;
+
+  display: grid;
+  grid-template-areas:
+    "image title . "
+    "image subTitle . "
+    "par par par ";
+  grid-auto-columns: max-content;
+  column-gap: 1.45rem;
+
+  border-radius: 0.625rem;
+  border: 1px solid var(--clr-border-sc);
+}
+
+.subTitle {
+  grid-area: subTitle;
+}
+.image {
+  grid-row: span 2;
+  grid-area: image;
+}
+
+.par {
+  width: 60vw;
+  max-width: 38ch;
+  margin-top: 2rem;
+  grid-area: par;
+}

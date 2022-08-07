@@ -1,0 +1,52 @@
+.footer {
+  width: var(--w-mob-section);
+  max-width: 63rem;
+  margin-bottom: 0;
+
+  padding: 1.75rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5rem;
+}
+
+.footerSocial {
+  display: grid;
+  grid-template-areas:
+    "address-icon address address "
+    "telephone-icon telephone-number telephone-number "
+    "social-icons social-icons social-icons ";
+  grid-auto-columns: auto;
+  align-items: center;
+  justify-items: left;
+  gap: 0.625rem;
+}
+.image {
+  justify-self: center;
+}
+.image svg path {
+  fill: var(--clr-bg-sc);
+}
+.addressIcon svg :first-child {
+  fill: var(--clr-tx-3);
+}
+
+.address {
+  grid-area: address;
+}
+.telephoneNumber {
+  grid-area: telephone-number;
+}
+
+.socialIcons {
+  grid-area: social-icons;
+  padding: 1.25rem 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+@media (min-width: 1080px) {
+  .footerSocial {
+    margin-left: auto;
+  }
+}

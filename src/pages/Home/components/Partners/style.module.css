@@ -1,0 +1,13 @@
+.logosContainer {
+  margin: 3.3rem 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3.2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  padding: 0.85rem 2.5rem;
+}

@@ -1,0 +1,35 @@
+.gallery {
+  margin: 0 auto;
+  margin-bottom: 2.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
+}
+.gallery > :nth-child(n + 5) {
+  display: none;
+}
+.active > :nth-child(n + 5) {
+  display: block;
+}
+
+.btn {
+  padding: 0.85rem 2.5rem;
+}
+@media (min-width: 480px) {
+  .image {
+    width: auto;
+    height: 100%;
+  }
+}
+@media (min-width: 1080px) {
+  .gallery {
+    max-width: 70rem;
+  }
+}
