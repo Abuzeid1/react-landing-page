@@ -65,7 +65,11 @@ function Navbar() {
       )}
 
       <button className={`btn ${styles.navbarBtn}`}>Login</button>
-      <button className={`btn ${styles.menuBtnImg}`} onClick={handleClick}>
+      <button
+        aria-label="mobile menu "
+        className={`btn ${styles.menuBtnImg}`}
+        onClick={handleClick}
+      >
         {images.vector}
       </button>
     </nav>

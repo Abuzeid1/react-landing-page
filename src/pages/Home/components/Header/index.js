@@ -23,14 +23,17 @@ function Header() {
 
       <figure className={`${styles.imagesGroup}`}>
         <picture className={`${styles.image} ${styles.dashboard}`}>
+          <source media="(max-width:480)" srcSet={images.dashboard._240} />
           <source media="(max-width:1080)" srcSet={images.dashboard._480} />
           <img src={images.dashboard._1080} alt="dashboard" />
         </picture>
         <picture className={`${styles.image} ${styles.chatBot}`}>
+          <source media="(max-width:480)" srcSet={images.chatBot._240} />
           <source media="(max-width:1080)" srcSet={images.chatBot._480} />
           <img src={images.chatBot._1080} alt="chat bot" />
         </picture>
         <picture className={`${styles.image} ${styles.boards}`}>
+          <source media="(max-width:480)" srcSet={images.boards._240} />
           <source media="(max-width:1080)" srcSet={images.boards._480} />
           <img src={images.boards._1080} alt="boards" />
         </picture>
