@@ -1,7 +1,7 @@
 html {
   /* clamp */
   --clamp: 1rem;
-  --clamp: clamp(0.6rem, 0.21428571428571425rem + 2.2857142857142856vw, 1rem);
+  --clamp: clamp(0.8rem, 0.40000000000000013rem + 2.133333333333333vw, 1rem);
   /* width */
   --w-normal: 80%;
   --w-max: 110rem;
