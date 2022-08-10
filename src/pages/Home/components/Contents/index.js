@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import images from "./images";
 
-function Index() {
+function Contents() {
   return (
     <section className={`section`}>
       <h2 className={`second-headline`}>Contents</h2>
@@ -14,7 +14,7 @@ function Index() {
           <h3 className={`${styles.title} title`}>Work</h3>
           <p className={`${styles.par} par`}>
             Ever wondered if you're too reliant on a client for work? Slate
-            helps you identify .
+            helps you identify.
           </p>
           <button className={`${styles.btn1} btn`}>Sign Up</button>
           <picture className={styles.image1}>
@@ -26,7 +26,7 @@ function Index() {
           <h3 className={`${styles.title} title`}>Design with real data</h3>
           <p className={`${styles.par} par`}>
             Ever wondered if you're too reliant on a client for work? Slate
-            helps you identify .
+            helps you identify.
           </p>
 
           <button className={`${styles.btn2} btn`}> Try For Free</button>
@@ -39,4 +39,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Contents;

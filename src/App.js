@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import "./App.css";
 import "./GlobalVariables.css";
 import "./global.css";
 import "./globalClasses.css";

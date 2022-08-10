@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import images from "./images";
 
-function index() {
+function Cta() {
   return (
     <section className={`section ${styles.section}`}>
       <h2 className={`second-headline ${styles.secondHeadline}`}>
@@ -16,4 +16,4 @@ function index() {
   );
 }
 
-export default index;
+export default Cta;

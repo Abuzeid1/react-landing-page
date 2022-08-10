@@ -1,78 +1,84 @@
 .section {
-  max-width: var(--w-mob-section);
-  margin: 3.125rem auto;
-  padding: 3.125rem 0;
+  max-width: var(--w-max);
+  width: var(--w-normal);
+  margin: calc(3.125 * var(--clamp)) auto;
+  padding: calc(3.125 * var(--clamp)) 0;
 }
 .second-headline {
   width: fit-content;
-  padding: 0.625rem;
+  padding: calc(0.625 * var(--clamp));
   margin: 0 auto;
   font-size: var(--fz-sc-headline);
-  font-weight: var(--fw-sc-headline);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-sc-headline);
   color: var(--clr-tx-pr);
 }
 .sub-heading {
   max-width: 50ch;
 
-  padding: 0.625rem;
+  padding: calc(0.625 * var(--clamp));
   margin: 0 auto;
   font-size: var(--fz-sub-heading);
-  font-weight: var(--fw-sub-heading);
+  font-weight: var(--fw-normal);
+  line-height: var(--lh-sub-heading);
 
   color: var(--clr-tx-pr);
 }
 .title {
-  padding: 0.625rem;
+  padding: calc(0.625 * var(--clamp));
   margin: 0 auto;
   font-size: var(--fz-title);
-  font-weight: var(--fw-title);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-title);
+
   color: var(--clr-tx-pr);
 }
 .sub-title {
   font-size: var(--fz-sub-title);
-  font-weight: var(--fw-sub-title);
+  font-weight: var(--fw-semibold);
   color: var(--clr-tx-pr);
+  line-height: var(--lh-normal);
+
   line-height: var(--lh-normal);
 }
 .par {
-  padding: 0.625rem;
+  padding: calc(0.625 * var(--clamp));
   margin: 0 auto;
   font-size: var(--fz-p);
-  font-weight: var(--fw-p);
+  font-weight: var(--fw-normal);
   color: var(--clr-tx-pr);
+
   line-height: var(--lh-normal);
 }
 .btn {
   width: fit-content;
   margin: 0 auto;
   font-size: var(--fz-btn);
-  font-weight: var(--fw-btn);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-normal);
   color: var(--clr-tx-pr);
   background-color: transparent;
   border: solid 1px var(--clr-bg-sc);
   cursor: pointer;
-  transition-property: transform, color;
+  transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: ease-in-out;
 }
 .btn:hover {
-  color: var(--clr-tx-sc);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .link {
   font-size: var(--fz-link);
-  font-weight: var(--fw-link);
+  font-weight: var(--fw-semibold);
   color: var(--clr-tx-pr);
   line-height: var(--lh-normal);
-
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition-property: transform, color;
+  transition-property: transform;
   transition-duration: 200ms;
   transition-timing-function: ease-in-out;
 }
 .link:hover {
-  color: var(--clr-tx-sc);
   transform: scale(1.1);
 }

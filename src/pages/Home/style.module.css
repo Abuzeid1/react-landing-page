@@ -1,0 +1,6 @@
+.container {
+  max-width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: var(--clr-bg-pr);
+}

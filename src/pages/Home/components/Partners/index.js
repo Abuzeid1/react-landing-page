@@ -1,6 +1,6 @@
 import styles from "./style.module.css";
 import images from "./images";
-function index() {
+function Partners() {
   return (
     <section className={`section`}>
       <h2 className={`second-headline`}>Partners</h2>
@@ -18,4 +18,4 @@ function index() {
   );
 }
 
-export default index;
+export default Partners;

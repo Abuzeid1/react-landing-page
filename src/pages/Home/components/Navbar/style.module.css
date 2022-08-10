@@ -1,78 +1,87 @@
 .navbar {
-  width: 100%;
-  padding: 1.6rem 2rem;
+  width: 90%;
+  margin: 0 auto;
+  padding: calc(1.6 * var(--clamp)) 0;
   position: relative;
   display: flex;
   align-items: center;
-  gap: 1.6rem;
+  gap: calc(1.6 * var(--clamp));
 }
 
 .navbarImg {
   cursor: pointer;
-  margin: 1rem 2rem;
-}
-.navbarImg:focus {
-  border: 1px solid wheat;
-}
-.navbarImg img {
-  width: 11.7rem;
-  height: auto;
+  width: 45%;
+  max-width: 11.7rem;
 }
 
 .navbarMenu {
-  display: none;
-  /* visibility: hidden; */
-  list-style-type: none;
-  padding: 1rem 1.5rem;
+  visibility: hidden;
+  padding: calc(1.5 * var(--clamp)) calc(1.5 * var(--clamp));
   position: absolute;
-  right: 1.6rem;
-  top: calc(100% - 1rem);
-  backdrop-filter: blur(50px);
+  top: 100%;
+  right: 0;
+
+  display: grid;
+  row-gap: calc(1.5 * var(--clamp));
+
+  list-style-type: none;
+  backdrop-filter: blur(3.125rem);
   border: solid 1px var(--clr-bg-sc);
-}
-.navbarMenu:focus {
-  color: blue;
-  background-color: #000;
-}
-.active {
-  display: block;
-  /* visibility: visible; */
+  z-index: 8;
 }
 
+.active {
+  visibility: visible;
+}
+.overlay {
+  position: absolute;
+
+  top: 0;
+  right: -5%;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 200vh;
+  z-index: 7;
+}
+@media (max-width: 1080px) {
+  .navbarItem {
+    font-size: var(--fz-m-menu);
+    font-weight: var(--fw-semibold);
+    line-height: var(--lh-m-menu);
+  }
+}
 .navbarBtn {
-  padding: 0.7rem 3rem;
+  padding: calc(0.7 * var(--clamp)) calc(3 * var(--clamp));
   margin-right: 0;
   filter: drop-shadow(0px 4px 31px rgba(0, 0, 0, 0.15));
 }
 
 .menuBtnImg {
-  border: none;
+  max-width: 10%;
   margin: 0;
+  border: none;
 }
 .menuBtnImg svg {
-  width: 2.75rem;
-  height: auto;
+  width: calc(2.75 * var(--clamp));
   fill: var(--clr-tx-pr);
-
   transition: color ease-in-out 200ms;
-}
-.menuBtnImg svg:hover {
-  fill: var(--clr-tx-sc);
 }
 
 @media (min-width: 1080px) {
   .navbar {
-    max-width: 68.75rem;
-    padding: 2rem 2.5rem;
-    margin: 0 auto;
+    max-width: 70rem;
+    padding: calc(2 * var(--clamp)) calc(2.5 * var(--clamp));
   }
+
   .navbarMenu {
+    position: relative;
+    visibility: visible;
     margin-left: auto;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 2rem;
-    position: relative;
+    gap: calc(2 * var(--clamp));
     border: none;
   }
 

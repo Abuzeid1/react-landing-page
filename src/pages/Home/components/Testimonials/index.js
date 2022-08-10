@@ -2,7 +2,7 @@ import styles from "./style.module.css";
 import data from "./data.js";
 import AvatarCard from "./AvatarCard";
 
-function index() {
+function Testimonials() {
   return (
     <section className={`section`}>
       <h2 className={`second-headline`}>Testimonials</h2>
@@ -15,4 +15,4 @@ function index() {
   );
 }
 
-export default index;
+export default Testimonials;

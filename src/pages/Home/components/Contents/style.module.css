@@ -1,22 +1,20 @@
 .cards {
   width: fit-content;
   margin: 0 auto;
-  margin-top: 2.75rem;
-
+  margin-top: calc(2.75 * var(--clamp));
   display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: calc(2 * var(--clamp));
 }
 .card1,
 .card2 {
-  max-width: 30rem;
-  padding: 2.5rem 0;
+  max-width: calc(30 * var(--clamp));
+  padding: calc(2.5 * var(--clamp)) 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 0.625rem;
+  gap: calc(0.625 * var(--clamp));
 
-  border-radius: 0.6rem;
+  border-radius: calc(0.6 * var(--clamp));
   background-color: var(--clr-bg-sc);
 }
 
@@ -29,15 +27,15 @@
 }
 .btn1,
 .btn2 {
-  padding: 0.85rem 2.88rem;
+  padding: calc(0.85 * var(--clamp)) calc(2.88 * var(--clamp));
   background: var(--clr-btn-pr);
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
 }
 .btn1 {
-  margin: 3.562rem auto;
+  margin: calc(3.562 * var(--clamp)) auto;
 }
 .btn2 {
-  margin: 1.875rem auto;
+  margin: calc(1.875 * var(--clamp)) auto;
 }
 .image1,
 .image2 {
@@ -48,10 +46,10 @@
 }
 .image2 {
   width: 80%;
+  border-radius: calc(0.875 * var(--clamp));
+  overflow: hidden;
 }
-.image2 img {
-  border-radius: 0.875rem;
-}
+
 @media (min-width: 1080px) {
   .cards {
     grid-template-columns: 1fr 1fr;

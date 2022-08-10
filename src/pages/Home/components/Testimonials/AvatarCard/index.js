@@ -6,8 +6,8 @@ function AvatarCard({ image, name, text }) {
       <picture className={`${styles.image}`}>
         <img loading="lazy" src={image} alt="" />
       </picture>
-      <h4 className={`link`}>{name}</h4>
-      <h5 className={`sub-title ${styles.subTitle}`}>Designer</h5>
+      <h3 className={`link`}>{name}</h3>
+      <h4 className={`sub-title ${styles.subTitle}`}>Designer</h4>
       <p className={`par ${styles.par}`}>
         {text[0]} <br />
         {text[1]}

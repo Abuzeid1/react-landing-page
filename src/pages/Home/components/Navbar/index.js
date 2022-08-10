@@ -4,40 +4,37 @@ import images from "./images";
 import { useEffect, useRef, useState } from "react";
 
 function Navbar() {
-  const navMenu = useRef(null);
-  const imgTest = useRef(null);
+  const listRef = useRef(null);
   let [isOpen, setIsOpen] = useState(false);
-
   useEffect(() => {
-    setTimeout(() => {
-      // navMenu.current.focus();
-      imgTest.current.focus();
-    }, 200);
-  }, []);
-  let handle = () => {
-    console.log(navMenu, imgTest);
-    // setIsOpen(!isOpen);
+    const handleScroll = (event) => {
+      if (
+        window.scrollY >
+        listRef.current.offsetTop + listRef.current.offsetHeight
+      ) {
+        setIsOpen(false);
+      }
+    };
 
-    setTimeout(() => {
-      // navMenu.current.focus();
-      imgTest.current.focus();
-    }, 200);
+    if (isOpen) {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }
+  }, [isOpen]);
+
+  let handleClick = (e) => {
+    e.preventDefault();
+    setIsOpen(!isOpen);
   };
 
-  const handleBlur = (e) => {
-    setIsOpen(false);
-  };
   return (
     <nav className={styles.navbar}>
-      <picture className={styles.navbarImg} ref={imgTest}>
-        {images.logo}
-      </picture>
-
+      <picture className={styles.navbarImg}>{images.logo}</picture>
       <ul
         className={`${styles.navbarMenu}  ${isOpen ? styles.active : ""}`}
-        ref={navMenu}
-        onBlur={handleBlur}
-        autoFocus
+        ref={listRef}
       >
         <li className={`${styles.listElement}`}>
           <a className={`${styles.navbarItem} link`} href="/">
@@ -63,10 +60,14 @@ function Navbar() {
         </li>
       </ul>
 
+      {isOpen && (
+        <div className={`${styles.overlay}`} onClick={handleClick}></div>
+      )}
+
       <button className={`btn ${styles.navbarBtn}`}>Login</button>
-      <picture className={`btn ${styles.menuBtnImg}`} onClick={handle}>
+      <button className={`btn ${styles.menuBtnImg}`} onClick={handleClick}>
         {images.vector}
-      </picture>
+      </button>
     </nav>
   );
 }

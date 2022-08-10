@@ -12,9 +12,9 @@ const data = [
   { title: "Or with rules", svg: images.infinity },
 ];
 
-function index() {
+function Features() {
   return (
-    <section className={`${styles.features}`} id="features">
+    <section className={`${styles.section} section`} id="features">
       <h2 className={`${styles.secondHeadline} second-headline`}>FEATURES</h2>
       <p className={`${styles.subHeading} sub-heading`}>
         Most calendars are designed for teams. Slate is designed for freelancers
@@ -48,4 +48,4 @@ function index() {
   );
 }
 
-export default index;
+export default Features;

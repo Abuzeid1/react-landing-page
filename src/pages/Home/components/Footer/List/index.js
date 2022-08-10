@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 const data = ["Home", "Examples", "Pricing", "Updates"];
 
-function index({ title }) {
+function List({ title }) {
   return (
     <ul className={`${styles.list}`}>
       <li className={`title ${styles.title}`}>{title}</li>
@@ -14,4 +14,4 @@ function index({ title }) {
   );
 }
 
-export default index;
+export default List;

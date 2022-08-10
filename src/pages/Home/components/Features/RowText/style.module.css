@@ -6,15 +6,14 @@
 .title {
   max-width: 19ch;
   margin-left: 0;
-  margin-bottom: 1.25rem;
+  margin-bottom: calc(1.25 * var(--clamp));
 
   display: flex;
   align-items: flex-start;
 }
 .image {
-  width: 2rem;
-  height: auto;
-  margin-right: 0.8rem;
+  width: calc(2 * var(--clamp));
+  margin-right: calc(0.8 * var(--clamp));
 }
 .subTitle {
   width: 27ch;

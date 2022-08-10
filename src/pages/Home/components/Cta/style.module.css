@@ -1,30 +1,23 @@
-.section {
-  max-width: 100%;
-}
 .secondHeadline {
-  max-width: var(--w-mob-section);
+  max-width: 15ch;
 }
 
 .btn {
-  padding: 1.25rem 2.25rem;
-  margin-top: 2.25rem;
-  margin-bottom: 6.25rem;
+  padding: calc(1.25 * var(--clamp)) calc(2.25 * var(--clamp));
+  margin-top: calc(2.25 * var(--clamp));
+  margin-bottom: calc(6.25 * var(--clamp));
 
   background: var(--clr-btn-pr);
   border: none;
   box-shadow: 0px 4px 31px rgba(0, 0, 0, 0.15);
 }
-.image {
-  display: block;
-  margin: 0 auto;
-  width: 85vw;
-}
-@media (min-width: 1444px) {
+
+@media (min-width: 1080px) {
   .section {
-    width: 77vw;
-    max-width: 81.25rem;
+    width: 85rem;
+    max-width: 95%;
     padding: 0;
-    margin: 12rem auto;
+    margin: calc(12 * var(--clamp)) auto;
     display: grid;
     grid-template-areas:
       "secondHeadline image"
@@ -33,30 +26,26 @@
     grid-template-rows: min-content;
 
     background-color: var(--clr-bg-3);
-    border-radius: 2rem;
+    border-radius: calc(2 * var(--clamp));
 
     overflow-y: hidden;
   }
   .secondHeadline {
-    margin: 0;
-    margin-left: 6rem;
-    margin-top: 4rem;
+    max-width: 18ch;
+    padding: 0;
+    margin-left: calc(6 * var(--clamp));
+    margin-top: calc(4.5 * var(--clamp));
     text-align: left;
     grid-area: secondHeadline;
   }
   .btn {
-    margin-left: 6rem;
+    margin-left: calc(6 * var(--clamp));
     grid-area: btn;
   }
   .image {
-    margin: 0;
-    margin-top: 3.125rem;
+    margin-top: calc(2 * var(--clamp));
     width: 100%;
-    height: 10rem;
+    height: calc(10 * var(--clamp));
     grid-area: image;
-  }
-  .image img {
-    width: 100%;
-    aspect-ratio: 0.95;
   }
 }

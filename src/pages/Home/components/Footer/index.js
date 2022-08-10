@@ -4,9 +4,9 @@ import images from "./images";
 import List from "./List";
 
 const data = ["Fingertipe", "Resources", "About"];
-function index() {
+function Footer() {
   return (
-    <footer id="footer" className={`section ${styles.footer}`}>
+    <footer id="footer" className={`section ${styles.section}`}>
       {data.map((el, ind) => (
         <List key={ind} title={el} />
       ))}
@@ -30,4 +30,4 @@ function index() {
   );
 }
 
-export default index;
+export default Footer;

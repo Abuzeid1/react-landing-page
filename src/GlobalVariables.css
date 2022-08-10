@@ -1,38 +1,43 @@
 html {
+  /* clamp */
+  --clamp: 1rem;
+  --clamp: clamp(0.6rem, 0.21428571428571425rem + 2.2857142857142856vw, 1rem);
   /* width */
-  --w-mob-section: 74%;
+  --w-normal: 80%;
+  --w-max: 110rem;
 
-  /* typography */
-  --fz-headline: 5rem;
-  --fw-headline: 500;
+  /* font sizes */
+  --fz-headline: calc(5 * var(--clamp));
 
-  --fz-sc-headline: 3.25rem;
-  --fw-sc-headline: 400;
+  --fz-sc-headline: calc(3.25 * var(--clamp));
 
-  --fz-sub-heading: 1.25rem;
-  --fw-sub-heading: 400;
+  --fz-sub-heading: calc(1.25 * var(--clamp));
 
-  --fz-title: 1.25rem;
-  --fw-title: 500;
+  --fz-title: calc(1.25 * var(--clamp));
 
-  --fz-sub-title: 1rem;
-  --fw-sub-title: 500;
+  --fz-sub-title: calc(1 * var(--clamp));
 
-  --fz-btn: 1.25rem;
-  --fw-btn: 500;
+  --fz-btn: calc(1.25 * var(--clamp));
 
-  --fz-p: 1rem;
-  --fw-p: 400;
+  --fz-p: calc(1 * var(--clamp));
 
-  --fz-link: 1rem;
-  --fw-link: 500;
+  --fz-link: calc(1 * var(--clamp));
 
-  --fz-m-menu: 1.875rem;
-  --fw-m-menu: 400;
+  --fz-m-menu: calc(1.875 * var(--clamp));
+
+  /* font-weights */
+  --fw-normal: 400;
+  --fw-semibold: 500;
+
   /* line heights */
-  --lh-normal: 1.5rem;
-  /* colors */
 
+  --lh-headline: calc(5.5 * var(--clamp));
+  --lh-sc-headline: calc(3.25 * var(--clamp));
+  --lh-sub-heading: calc(1.875rem * var(--clamp));
+  --lh-sub-title: calc(1.875rem * var(--clamp));
+  --lh-m-menu: calc(2.9 * var(var(--clamp)));
+  --lh-normal: calc(1.5 * var(--clamp));
+  /* colors */
   --clr-tx-pr: rgb(255, 255, 255);
   --clr-tx-sc: rgb(92, 92, 92);
   --clr-tx-3: rgb(0, 0, 0);

@@ -1,7 +1,7 @@
 import styles from "./style.module.css";
 import images from "./images";
 
-function index() {
+function Header() {
   return (
     <section className={`${styles.section}`}>
       <h1 className={`${styles.headLine} second-headline`}>
@@ -39,4 +39,4 @@ function index() {
   );
 }
 
-export default index;
+export default Header;
