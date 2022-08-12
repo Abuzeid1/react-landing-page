@@ -11,19 +11,17 @@ import Navbar from "./components/Navbar";
 
 function Home() {
   return (
-    <>
-      <main className={`${styles.container}`}>
-        <Navbar />
-        <Header />
-        <Features />
-        <Contents />
-        <Gallery />
-        <Partners />
-        <Testimonials />
-        <Cta />
-        <Footer />
-      </main>
-    </>
+    <main className={`${styles.container}`}>
+      <Navbar />
+      <Header />
+      <Features />
+      <Contents />
+      <Gallery />
+      <Partners />
+      <Testimonials />
+      <Cta />
+      <Footer />
+    </main>
   );
 }
 

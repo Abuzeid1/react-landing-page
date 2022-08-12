@@ -3,8 +3,13 @@ import "./GlobalVariables.css";
 import "./global.css";
 import "./globalClasses.css";
 import Home from "./pages/Home";
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    const loader = document.getElementById("mainLoaderContainer");
+    loader.style.display = "none";
+  });
   return (
     <BrowserRouter className="App">
       <main className="App">
