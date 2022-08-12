@@ -24,17 +24,23 @@ function Features() {
       <div className={`${styles.featureFrame}`}>
         <figure className={`${styles.featureImg}`}>
           <picture className={`${styles.frameImg1}`}>
-            <source media="(max-width:480px)" srcSet={images.chatBotImg._480} />
             <source
-              media="(max-width:1080px)"
+              media="(max-width: 480px)"
+              srcSet={images.chatBotImg._480}
+            />
+            <source
+              media="(max-width: 1080px)"
               srcSet={images.chatBotImg._1080}
             />
             <img loading="lazy" src={images.chatBotImg._1920} alt="" />
           </picture>
 
           <picture className={`${styles.frameImg2}`}>
-            <source media="(max-width:480px)" srcSet={images.chartImg._480} />
-            <source media="(max-width:1080px)" srcSet={images.chartImg._1080} />
+            <source media="(max-width: 480px)" srcSet={images.chartImg._480} />
+            <source
+              media="(max-width: 1080px)"
+              srcSet={images.chartImg._1080}
+            />
             <img loading="lazy" src={images.chartImg._1920} alt="" />
           </picture>
         </figure>
