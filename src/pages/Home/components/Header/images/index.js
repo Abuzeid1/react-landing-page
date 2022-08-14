@@ -29,28 +29,28 @@ const images = {
       alt: "boards",
     },
   },
-  chatbot: {
-    _360: {
-      src: require("./chatbot360.webp"),
-      imageWidth: "360px",
-    },
-    _720: {
-      src: require("./chatbot720.webp"),
-      imageWidth: "720px",
-    },
-    _1080: {
-      src: require("./chatbot1080.webp"),
-      imageWidth: "1080px",
-    },
-    _1440: {
-      src: require("./chatbot1440.webp"),
-      imageWidth: "1440px",
-    },
-    _1920: {
-      src: require("./chatbot1920.webp"),
-      imageWidth: "1920px",
-      alt: "chatbot",
-    },
-  },
+  // chatbot: {
+  //   _360: {
+  //     src: require("./chatbot360.webp"),
+  //     imageWidth: "360px",
+  //   },
+  //   _720: {
+  //     src: require("./chatbot720.webp"),
+  //     imageWidth: "720px",
+  //   },
+  //   _1080: {
+  //     src: require("./chatbot1080.webp"),
+  //     imageWidth: "1080px",
+  //   },
+  //   _1440: {
+  //     src: require("./chatbot1440.webp"),
+  //     imageWidth: "1440px",
+  //   },
+  //   _1920: {
+  //     src: require("./chatbot1920.webp"),
+  //     imageWidth: "1920px",
+  //     alt: "chatbot",
+  //   },
+  // },
 };
 export default images;
