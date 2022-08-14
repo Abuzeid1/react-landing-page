@@ -14,6 +14,7 @@ const images = {
       alt: "dashboard",
     },
     aspectRatio: 360 / 332,
+    loading: "eager",
   },
   boards: {
     _720: {
@@ -30,6 +31,7 @@ const images = {
       alt: "boards",
     },
     aspectRatio: 360 / 332,
+    loading: "eager",
   },
   chatbot: {
     _360: {
@@ -54,6 +56,7 @@ const images = {
       alt: "chatbot",
     },
     aspectRatio: 360 / 349,
+    loading: "eager",
   },
 };
 export default images;

@@ -7,6 +7,7 @@ function Picture({
   _1440,
   _1920,
   aspectRatio,
+  loading,
   imageClassName,
   pictureClassName,
 }) {
@@ -46,7 +47,7 @@ function Picture({
       )}
 
       <img
-        loading="lazy"
+        loading={loading ? loading : "lazy"}
         width={`${_1920.imageWidth}px`}
         height={`${_1920?.imageWidth / aspectRatio}px`}
         className={imageClassName ? imageClassName : ""}
