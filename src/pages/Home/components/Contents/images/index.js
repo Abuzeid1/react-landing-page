@@ -3,6 +3,7 @@ const images = {
     _1920: {
       src: require("./boardsNotification360.webp"),
       imageWidth: "360px",
+      alt: "boards Notification",
     },
   },
   macBookPro: {

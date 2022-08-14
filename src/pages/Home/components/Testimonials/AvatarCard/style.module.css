@@ -1,14 +1,17 @@
 .card {
-  width: min-content;
+  max-width: 45ch;
+
   padding: calc(2.5 * var(--clamp));
   text-align: left;
 
   display: grid;
   grid-template-areas:
-    "image title . "
-    "image subTitle . "
-    "par par par ";
-  grid-auto-columns: 12% max-content max-content;
+    "image title  "
+    "image subTitle  "
+    "par par  ";
+
+  grid-template-columns: 2fr 10fr;
+
   align-items: center;
 
   column-gap: calc(1.45 * var(--clamp));
@@ -28,7 +31,7 @@
 }
 
 .par {
-  max-width: 38ch;
+  margin: 0;
   margin-top: calc(2 * var(--clamp));
   grid-area: par;
 }
