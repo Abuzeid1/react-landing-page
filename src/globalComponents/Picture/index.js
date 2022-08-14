@@ -12,7 +12,10 @@ function Picture({
   pictureClassName,
 }) {
   return (
-    <picture className={pictureClassName ? pictureClassName : ""}>
+    <picture
+      className={pictureClassName ? pictureClassName : ""}
+      style={{ aspectRatio }}
+    >
       {_360 && (
         <source
           media="(max-width: 360px)"
