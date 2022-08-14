@@ -24,10 +24,10 @@ function Features() {
 
       <div className={`${styles.featureFrame}`}>
         <figure className={`${styles.featureImg}`}>
-          {/* <Picture
+          <Picture
             pictureClassName={`${styles.frameImg1}`}
             {...headerImages.chatbot}
-          ></Picture> */}
+          ></Picture>
 
           <Picture
             pictureClassName={`${styles.frameImg2}`}
