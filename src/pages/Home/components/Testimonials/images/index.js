@@ -1,8 +1,32 @@
 const images = {
-  ellipse1: require("./ellipse1.webp"),
-  ellipse2: require("./ellipse2.webp"),
-  ellipse3: require("./ellipse3.webp"),
-  ellipse4: require("./ellipse4.webp"),
+  person1: {
+    _1920: {
+      src: require("./person1360.webp"),
+      imageWidth: "360px",
+      alt: " person face ",
+    },
+  },
+  person2: {
+    _1920: {
+      src: require("./person2360.webp"),
+      imageWidth: "360px",
+      alt: " person face ",
+    },
+  },
+  person3: {
+    _1920: {
+      src: require("./person3360.webp"),
+      imageWidth: "360px",
+      alt: " person face ",
+    },
+  },
+  person4: {
+    _1920: {
+      src: require("./person4360.webp"),
+      imageWidth: "360px",
+      alt: " person face ",
+    },
+  },
 };
 
 export default images;

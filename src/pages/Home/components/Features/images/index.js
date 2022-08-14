@@ -1,17 +1,22 @@
 const images = {
-  chatBotImg: {
-    _480: require("../../Header/images/chatBot480.webp"),
-    _1080: require("../../Header/images/chatBot1080.webp"),
-    _1920: require("../../Header/images/chatBot1920.webp"),
+  lineChart: {
+    _720: {
+      src: require("./linechart360.webp"),
+      imageWidth: "360px",
+    },
+    _1440: {
+      src: require("./linechart720.webp"),
+      imageWidth: "720px",
+    },
+    _1920: {
+      src: require("./linechart1080.webp"),
+      imageWidth: "1080px",
+      alt: "chart line image",
+    },
   },
-  chartImg: {
-    _480: require("./chart480.webp"),
-    _1080: require("./chart1080.webp"),
-    _1920: require("./chart1920.webp"),
-  },
-  restaurant: require("./restaurant.svg").default,
-  alien: require("./alien.svg").default,
-  infinity: require("./infinity.svg").default,
+  restaurant: require("./restaurant-optimized.svg").default,
+  alien: require("./alien-optimized.svg").default,
+  infinity: require("./infinity-optimized.svg").default,
 };
 
 export default images;

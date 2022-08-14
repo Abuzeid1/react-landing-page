@@ -1,5 +1,6 @@
 import styles from "./style.module.css";
 import images from "./images";
+import Picture from "../../../../globalComponents/Picture";
 
 function Header() {
   return (
@@ -22,30 +23,18 @@ function Header() {
       </div>
 
       <figure className={`${styles.imagesGroup}`}>
-        <picture className={`${styles.image} ${styles.dashboard}`}>
-          <source
-            media="(max-width: 1080px)"
-            width="480px"
-            srcSet={images.dashboard._480}
-          />
-          <img src={images.dashboard._1080} width="1080px" alt="dashboard" />
-        </picture>
-        <picture className={`${styles.image} ${styles.chatBot}`}>
-          <source
-            media="(max-width: 1080px)"
-            width="480px"
-            srcSet={images.chatBot._480px}
-          />
-          <img src={images.chatBot._1080} width="1080px" alt="chat bot" />
-        </picture>
-        <picture className={`${styles.image} ${styles.boards}`}>
-          <source
-            media="(max-width: 1080px)"
-            width="480px"
-            srcSet={images.boards._480}
-          />
-          <img src={images.boards._1080} width="1080px" alt="boards" />
-        </picture>
+        <Picture
+          {...images.dashboard}
+          pictureClassName={`${styles.image} ${styles.dashboard}`}
+        ></Picture>
+        <Picture
+          {...images.chatbot}
+          pictureClassName={`${styles.image} ${styles.chatBot}`}
+        ></Picture>
+        <Picture
+          {...images.boards}
+          pictureClassName={`${styles.image} ${styles.boards}`}
+        ></Picture>
       </figure>
     </section>
   );

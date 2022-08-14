@@ -1,5 +1,16 @@
 const images = {
-  boards: require("./boards.webp"),
-  macBook: require("./macBook.webp"),
+  boardsNotification: {
+    _1920: {
+      src: require("./boardsNotification360.webp"),
+      imageWidth: "360px",
+    },
+  },
+  macBookPro: {
+    _1920: {
+      src: require("./macbookPro360.webp"),
+      imageWidth: "360px",
+      alt: "macBook pro image",
+    },
+  },
 };
 export default images;

@@ -1,5 +1,5 @@
-import { ReactComponent as Vector } from "./Vector.svg";
-import { ReactComponent as Logo } from "./logo.svg";
+import { ReactComponent as Vector } from "./Vector-optimized.svg";
+import { ReactComponent as Logo } from "./logo-optimized.svg";
 const images = {
   logo: <Logo />,
   vector: <Vector />,

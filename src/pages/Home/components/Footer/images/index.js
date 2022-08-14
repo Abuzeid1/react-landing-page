@@ -1,8 +1,8 @@
-import { ReactComponent as AddressLogo } from "./addressLogo.svg";
-import { ReactComponent as PhoneLogo } from "./phoneLogo.svg";
-import { ReactComponent as TwitterLogo } from "./twitterLogo.svg";
-import { ReactComponent as FacebookLogo } from "./facebookLogo.svg";
-import { ReactComponent as LinkedinLogo } from "./linkedinLogo.svg";
+import { ReactComponent as AddressLogo } from "./addressLogo-optimized.svg";
+import { ReactComponent as PhoneLogo } from "./phoneLogo-optimized.svg";
+import { ReactComponent as TwitterLogo } from "./twitterLogo-optimized.svg";
+import { ReactComponent as FacebookLogo } from "./facebookLogo-optimized.svg";
+import { ReactComponent as LinkedinLogo } from "./linkedinLogo-optimized.svg";
 
 const images = {
   logo1: <AddressLogo />,

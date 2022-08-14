@@ -8,7 +8,7 @@
     "image title . "
     "image subTitle . "
     "par par par ";
-  grid-auto-columns: max-content;
+  grid-auto-columns: 12% max-content max-content;
   align-items: center;
 
   column-gap: calc(1.45 * var(--clamp));
@@ -22,6 +22,9 @@
 }
 .image {
   grid-area: image;
+
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .par {

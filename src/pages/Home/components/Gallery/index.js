@@ -1,6 +1,7 @@
 import styles from "./style.module.css";
 import images from "./images";
 import { useState } from "react";
+import Picture from "../../../../globalComponents/Picture";
 
 function Gallery() {
   const [isActive, setIsActive] = useState(false);
@@ -26,13 +27,12 @@ function Gallery() {
       </p>
       <figure className={`${styles.gallery}`}>
         {imgKeys.map((key, index) => (
-          <img
-            className={`${styles.image}`}
+          <Picture
+            pictureClassName={`${styles.image}`}
+            imageClassName={`${styles.photo}`}
+            {...images[key]}
             key={`${key} ${index}`}
-            loading="lazy"
-            src={images[key]}
-            alt={key}
-          ></img>
+          ></Picture>
         ))}
       </figure>
 

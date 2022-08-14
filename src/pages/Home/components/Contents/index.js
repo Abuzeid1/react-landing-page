@@ -1,5 +1,6 @@
 import styles from "./style.module.css";
 import images from "./images";
+import Picture from "../../../../globalComponents/Picture";
 
 function Contents() {
   return (
@@ -17,9 +18,10 @@ function Contents() {
             helps you identify.
           </p>
           <button className={`${styles.btn1} btn`}>Sign Up</button>
-          <picture className={styles.image1}>
-            <img loading="lazy" src={images.macBook} alt="" />
-          </picture>
+          <Picture
+            pictureClassName={styles.image1}
+            {...images.macBookPro}
+          ></Picture>
         </div>
 
         <div className={`${styles.card2}`}>
@@ -30,9 +32,10 @@ function Contents() {
           </p>
 
           <button className={`${styles.btn2} btn`}> Try For Free</button>
-          <picture className={styles.image2}>
-            <img loading="lazy" src={images.boards} alt="" />
-          </picture>
+          <Picture
+            pictureClassName={styles.image2}
+            {...images.boardsNotification}
+          ></Picture>
         </div>
       </div>
     </section>

@@ -1,7 +1,8 @@
 import styles from "./style.module.css";
 import images from "./images";
+import headerImages from "../Header/images";
 import RowText from "./RowText";
-
+import Picture from "../../../../globalComponents/Picture";
 // data for features list
 const data = [
   {
@@ -23,26 +24,15 @@ function Features() {
 
       <div className={`${styles.featureFrame}`}>
         <figure className={`${styles.featureImg}`}>
-          <picture className={`${styles.frameImg1}`}>
-            <source
-              media="(max-width: 480px)"
-              srcSet={images.chatBotImg._480}
-            />
-            <source
-              media="(max-width: 1080px)"
-              srcSet={images.chatBotImg._1080}
-            />
-            <img loading="lazy" src={images.chatBotImg._1920} alt="" />
-          </picture>
+          <Picture
+            pictureClassName={`${styles.frameImg1}`}
+            {...headerImages.chatbot}
+          ></Picture>
 
-          <picture className={`${styles.frameImg2}`}>
-            <source media="(max-width: 480px)" srcSet={images.chartImg._480} />
-            <source
-              media="(max-width: 1080px)"
-              srcSet={images.chartImg._1080}
-            />
-            <img loading="lazy" src={images.chartImg._1920} alt="" />
-          </picture>
+          <Picture
+            pictureClassName={`${styles.frameImg2}`}
+            {...images.lineChart}
+          ></Picture>
         </figure>
         <ul className={`${styles.featureRows}`}>
           {data.map((el) => (
