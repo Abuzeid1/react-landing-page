@@ -38,10 +38,10 @@ const images = {
       src: require("./chatbot720.webp"),
       imageWidth: "720px",
     },
-    // _1080: {
-    //   src: require("./chatbot1080.webp"),
-    //   imageWidth: "1080px",
-    // },
+    _1080: {
+      src: require("./chatbot1080.webp"),
+      imageWidth: "1080px",
+    },
     _1440: {
       src: require("./chatbot1440.webp"),
       imageWidth: "1440px",
