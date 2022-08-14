@@ -27,10 +27,10 @@ function Header() {
           {...images.dashboard}
           pictureClassName={`${styles.image} ${styles.dashboard}`}
         ></Picture>
-        <Picture
+        {/* <Picture
           {...images.chatbot}
           pictureClassName={`${styles.image} ${styles.chatBot}`}
-        ></Picture>
+        ></Picture> */}
         <Picture
           {...images.boards}
           pictureClassName={`${styles.image} ${styles.boards}`}
