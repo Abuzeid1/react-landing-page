@@ -12,8 +12,9 @@
   align-items: flex-start;
 }
 .image {
-  width: calc(2 * var(--clamp));
-  margin-right: calc(0.8 * var(--clamp));
+  /* width: calc( * var(--clamp)); */
+  width: 3rem;
+  margin-right: calc(0.4 * var(--clamp));
 }
 .subTitle {
   width: 27ch;

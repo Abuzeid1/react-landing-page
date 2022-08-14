@@ -4,9 +4,7 @@ function RowText({ title, svg }) {
   return (
     <li className={`${styles.listItem}`}>
       <h3 className={`title ${styles.title}`}>
-        <picture className={`${styles.image}`}>
-          <img loading="lazy" src={svg} alt="" />
-        </picture>
+        <picture className={`${styles.image}`}>{svg}</picture>
         {title}
       </h3>
 

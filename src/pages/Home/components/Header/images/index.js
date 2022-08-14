@@ -2,55 +2,58 @@ const images = {
   dashboard: {
     _720: {
       src: require("./dashboard360.webp"),
-      imageWidth: "360px",
+      imageWidth: 360,
     },
     _1440: {
       src: require("./dashboard720.webp"),
-      imageWidth: "720px",
+      imageWidth: 720,
     },
     _1920: {
       src: require("./dashboard1080.webp"),
-      imageWidth: "1080px",
+      imageWidth: 1080,
       alt: "dashboard",
     },
+    aspectRatio: 360 / 332,
   },
   boards: {
     _720: {
       src: require("./boards360.webp"),
-      imageWidth: "360px",
+      imageWidth: 360,
     },
     _1440: {
       src: require("./boards720.webp"),
-      imageWidth: "720px",
+      imageWidth: 720,
     },
     _1920: {
       src: require("./boards1080.webp"),
-      imageWidth: "1080px",
+      imageWidth: 1080,
       alt: "boards",
     },
+    aspectRatio: 360 / 332,
   },
   chatbot: {
     _360: {
       src: require("./chatbot360.webp"),
-      imageWidth: "360px",
+      imageWidth: 360,
     },
     _720: {
       src: require("./chatbot720.webp"),
-      imageWidth: "720px",
+      imageWidth: 720,
     },
     _1080: {
       src: require("./chatbot1080.webp"),
-      imageWidth: "1080px",
+      imageWidth: 1080,
     },
     _1440: {
       src: require("./chatbot1440.webp"),
-      imageWidth: "1440px",
+      imageWidth: 1440,
     },
     _1920: {
       src: require("./chatbot1920.webp"),
-      imageWidth: "1920px",
+      imageWidth: 1920,
       alt: "chatbot",
     },
+    aspectRatio: 360 / 349,
   },
 };
 export default images;

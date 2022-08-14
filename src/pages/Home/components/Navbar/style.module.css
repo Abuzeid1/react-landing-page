@@ -13,6 +13,10 @@
   width: 45%;
   max-width: 11.7rem;
 }
+.navbarImg image {
+  width: 165%;
+  height: 100%;
+}
 
 .navbarMenu {
   visibility: hidden;

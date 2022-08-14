@@ -10,7 +10,7 @@ function Partners() {
       </p>
       <figure className={`${styles.logosContainer}`}>
         {Object.keys(images).map((el, index) => (
-          <img loading="lazy" src={images[el]} key={`${el} ${index}`} alt="" />
+          <picture key={index}>{images[el]}</picture>
         ))}
       </figure>
       <button className={`btn ${styles.btn}`}> All Partners</button>
