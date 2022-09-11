@@ -1,6 +1,6 @@
 .navbar {
   width: 90%;
-  margin: 0 auto;
+  margin-inline: auto;
   padding: calc(1.6 * var(--clamp)) 0;
   position: relative;
   display: flex;
@@ -10,8 +10,7 @@
 
 .navbarImg {
   cursor: pointer;
-  width: 45%;
-  max-width: 11.7rem;
+  width: min(45%, 11.7rem);
 }
 .navbarImg svg {
   max-width: 100%;

@@ -14,8 +14,7 @@
 
 @media (min-width: 1080px) {
   .section {
-    width: 85rem;
-    max-width: 95%;
+    width: min(85rem, 95%);
     padding: 0;
     margin: calc(12 * var(--clamp)) auto;
     display: grid;

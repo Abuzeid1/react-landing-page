@@ -2,7 +2,7 @@
   max-width: 100%;
 }
 .gallery {
-  margin: 0 auto;
+  margin-inline: auto;
   margin-bottom: calc(2.75 * var(--clamp));
   display: flex;
   flex-wrap: wrap;

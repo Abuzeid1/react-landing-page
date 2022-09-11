@@ -1,6 +1,6 @@
 .cards {
   width: fit-content;
-  margin: 0 auto;
+  margin-inline: auto;
   margin-top: calc(2.75 * var(--clamp));
   display: grid;
   gap: calc(2 * var(--clamp));

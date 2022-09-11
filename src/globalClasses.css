@@ -1,13 +1,12 @@
 .section {
-  max-width: var(--w-max);
-  width: var(--w-normal);
+  width: min(var(--w-normal, --w-max));
   margin: calc(3.125 * var(--clamp)) auto;
   padding: calc(3.125 * var(--clamp)) 0;
 }
 .second-headline {
   width: fit-content;
   padding: calc(0.625 * var(--clamp));
-  margin: 0 auto;
+  margin-inline: auto;
   font-size: var(--fz-sc-headline);
   font-weight: var(--fw-normal);
   line-height: var(--lh-sc-headline);
@@ -17,7 +16,7 @@
   max-width: 50ch;
 
   padding: calc(0.625 * var(--clamp));
-  margin: 0 auto;
+  margin-inline: auto;
   font-size: var(--fz-sub-heading);
   font-weight: var(--fw-normal);
   line-height: var(--lh-sub-heading);
@@ -26,7 +25,7 @@
 }
 .title {
   padding: calc(0.625 * var(--clamp));
-  margin: 0 auto;
+  margin-inline: auto;
   font-size: var(--fz-title);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-title);
@@ -43,7 +42,7 @@
 }
 .par {
   padding: calc(0.625 * var(--clamp));
-  margin: 0 auto;
+  margin-inline: auto;
   font-size: var(--fz-p);
   font-weight: var(--fw-normal);
   color: var(--clr-tx-pr);
@@ -52,7 +51,7 @@
 }
 .btn {
   width: fit-content;
-  margin: 0 auto;
+  margin-inline: auto;
   font-size: var(--fz-btn);
   font-weight: var(--fw-semibold);
   line-height: var(--lh-normal);

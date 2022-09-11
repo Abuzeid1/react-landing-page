@@ -92,8 +92,7 @@
 
 @media (min-width: 1080px) {
   .imagesGroup {
-    width: 73%;
-    max-width: 80rem;
+    width: min(73%, 80rem);
   }
 }
 
